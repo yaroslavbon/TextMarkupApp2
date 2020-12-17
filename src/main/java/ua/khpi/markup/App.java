@@ -13,7 +13,7 @@ public class App extends Application {
     public void start(Stage primaryStage) throws Exception{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/app.fxml"));
         Parent root = loader.load();
-        primaryStage.setTitle("File markup application");
+        primaryStage.setTitle("File classification application");
         primaryStage.setScene(new Scene(root, 800, 500));
         MainController controller = loader.getController();
         controller.init();
